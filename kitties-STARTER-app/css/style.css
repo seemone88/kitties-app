@@ -1,0 +1,49 @@
+/*@import a Google Font here!*/
+
+body {
+	background-image: url("../images/background.png");
+
+}
+
+#container {
+
+}
+
+.dashed {
+	border: 1px solid;
+	border-radius: 20px;
+	margin-left: 18px;
+	width:200px;
+	padding:20px;
+}
+
+.left-container {
+	border: 2px solid;
+	border-radius: 20px;
+	width:280px;
+	display:inline-block;
+	position:relative;
+	background-color:white;
+}
+.right-container {
+	border: 2px solid;
+	border-radius: 20px;
+
+	width:280px;
+	float:right;
+	display:inline-block;
+	position:relative;
+	background-color:white;
+}
+h1 {
+text-align: center;
+}
+
+img{
+	border-radius: 20px;
+
+}
+#header{
+	background-color:black;
+	color:white;
+}
