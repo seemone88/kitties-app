@@ -24,16 +24,17 @@ body {
 	display:inline-block;
 	position:relative;
 	background-color:white;
+
 }
 .right-container {
 	border: 2px solid;
 	border-radius: 20px;
-
 	width:280px;
 	float:right;
 	display:inline-block;
 	position:relative;
 	background-color:white;
+
 }
 h1 {
 text-align: center;
