@@ -15,12 +15,13 @@
 		<div id="container" ng-controller="KittiesController as kc">
 		<div class="left-container">
 			<h1>Kitties for Adoption</h1>
-			<div class="dashed" ng-repeat="k in kc.kittiesList | filter:false">
+			<div class="dashed" ng-repeat="k in kc.kittiesList" ng-show="k.adopted">
 			 <img src="{{k.image}}" alt="" />
 			 <p>Name: {{k.catName}}</p>
 			 <p>Age: {{k.monthsOld}}</p>
 			 <p>Gender: {{k.gender}}</p>
-			 <button ng-click="k.adopted = true" type="button" name="button">Adopt Me~</button>
+			 <button ng-click="k.adopted = false" type="button" name="button">Throwing me away</button>
+
 			</div>
 
 		</div>
@@ -28,12 +29,13 @@
 
 		<div class="right-container">
 			<h1>Kitties Adopted</h1>
-			<div class="dashed" ng-repeat="k in kc.kittiesList | filter:true">
+			<div class="dashed" ng-repeat="k in kc.kittiesList" ng-hide="k.adopted">
 			 <img src="{{k.image}}" alt="" />
 			 <p>Name: {{k.catName}}</p>
 			 <p>Age: {{k.monthsOld}}</p>
 			 <p>Gender: {{k.gender}}</p>
-			 <button ng-click="k.adopted = false" type="button" name="button">Throwing me away</button>
+
+			 <button ng-click="k.adopted = true" type="button" name="button">Throwing me away</button>
 
 		</div>
 		</div>
